@@ -12,7 +12,7 @@ int main(){
         int r=2e9;
         while(l<r){
             int mid=l+(r-l)/2;
-            if((mid-mid/x)>=cnt1&&(mid-mid/y)>=cnt2&&(mid-mid/(x+y))>=(cnt1+cnt2)){
+            if((mid-mid/x)>=cnt1&&(mid-mid/y)>=cnt2&&(mid-mid/(x*y))>=(cnt1+cnt2)){
                 r=mid;
             }else{
                 l=mid+1;
